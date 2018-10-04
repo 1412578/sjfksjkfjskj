@@ -2,6 +2,7 @@
   <div class='translate-page'>
     <panel class='panel panel-left' theme='dark' language='French'></panel>
     <panel class='panel panel-right' theme='light' language='English'></panel>
+    <button class="translate">Translate</button>
   </div>
 </template>
 
@@ -26,6 +27,23 @@ export default {
   height: 100vh;
   display: flex;
   flex-direction: row;
+  position: relative;
+}
+
+.translate { 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #0b4050;
+  color: white;
+  border: none;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  outline: none;
+}
+.translate:hover{
 }
 .panel{
   flex-grow: 1;
